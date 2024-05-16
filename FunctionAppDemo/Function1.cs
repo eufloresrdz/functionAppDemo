@@ -17,9 +17,7 @@ namespace FunctionAppDemo
     public static class Function1
     {
         /* Cadena de conexión para utilizar el emulador local (Azurite) */
-        static string LOCAL_CONN_STRING = "DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;\r\nQueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;";
-        /* Cadena de conexión para utilizar los recursos en la nube */
-        static string AZURE_CONN_STRING = "DefaultEndpointsProtocol=https;AccountName=plenicaldemo;AccountKey=M0xoP6sxP5CMnBUs+1wKn6QBD6VdSDzdYMK4XP4Dmlkw86so0f+dFfhZd/C1GwZ18Sip5uXHrmzY+AStjZ/xRw==;EndpointSuffix=core.windows.net;TableEndpoint=https://plenicaldemo.table.core.windows.net/datosPersonales;";
+        static string LOCAL_CONN_STRING = "DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;\r\nQueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;";        
 
         [FunctionName("GetAll")]
         public static async Task<IActionResult> GetAll(
